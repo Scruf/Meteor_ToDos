@@ -1,0 +1,14 @@
+<body>
+	<div class="container">
+		<header>ToDos</header>
+		<form class="new_task">
+			<input type="text" name='text' placeholder="Enter your Task Here" />
+		</form>
+		<ul>
+			{{#each tasks}}
+				{{> task}}
+			{{/each}}
+		</ul>
+	</div>
+</body>
+
